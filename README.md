@@ -28,3 +28,63 @@ Multiply Choice MRC，属于MRC。常见的形式为阅读文章，针对问题�
    macro avg     0.8742    0.8666    0.8686      1436
 weighted avg     0.8724    0.8691    0.8690      1436
 ```
+
+### 测试
+
+参考文章网址：[https://yingyu.xdf.cn/201901/10843790.html](https://yingyu.xdf.cn/201901/10843790.html)
+
+文章:
+
+```
+Edward rose early on the New-year morning. He looked in every room and wished a Happy New Year to his family. Then he ran into the street to repeat that to those he might meet.
+
+When he came back, his father gave him two bright, new silver dollars.
+
+His face lighted up as he took them. He had wished for a long time to buy some pretty books that he had seen at the bookstore.
+
+He left the house with a light heart, expecting to buy the books. As he ran down the street, he saw a poor family.
+
+“I wish you a Happy New Year.” said Edward, as he was passing on. The man shook his head.
+
+“You are not from this country.” said Edward. The man again shook his head, for he could not understand or speak his language. But he pointed to his mouth and to the children shaking with cold, as if (好像) to say, “These little ones have had nothing to eat for a long time.”
+
+Edward quickly understood that these poor people were in trouble. He took out his dollars and gave one to the man, and the other to his wife.
+
+They were excited and said something in their language, which doubtless meant, “We thank you so much that we will remember you all the time.”
+
+When Edward came home, his father asked what books he had bought. He hung his head a moment, but quickly looked up.
+
+“I have bought no books”, said he. “I gave my money to some poor people, who seemed to be very hungry then.” He went on, “I think I can wait for my books till next New Year.”
+
+“My dear boy,” said his father, “here are some books for you, more as a prize for your goodness of heart than as a New-year gift”
+
+“I saw you give the money cheerfully to the poor German family. It was nice for a little boy to do so. Be always ready to help others and every year of your life will be to you a Happy New Year.”
+```
+
+问题：
+
+```
+48. Edward expected to _________ with the money he got from his father.
+
+A. help the poor family B. buy something to eat
+
+C. buy some pretty books D. learn another language
+
+49. Why did the poor man shake his head when Edward spoke to him?
+
+A. He couldn’t understand the boy B. He wouldn’t accept the money
+
+C. He didn’t like the boy’s language D. He was too cold to say anything
+
+50. How much did Edward give the poor family?
+
+A. One dollar B. Two dollars C. Three dollars D. Four dollars
+
+51. We know that Edward_________ from the passage?
+
+A. got a prize for his kind heart B. had to buy his books next year
+
+C. bought the books at the bookstore D. got more money from his father
+```
+
+模型给出答案为： `CABA`
