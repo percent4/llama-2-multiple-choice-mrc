@@ -39,7 +39,7 @@ def ds_llm():
     outputs = outputs.tolist()[0][len(input_ids[0]):]
     response = tokenizer.decode(outputs)
     response = response.strip().replace(tokenizer.eos_token, "").strip()
-    return jsonify({"text": text, "response": response})
+    return jsonify({"inputs": text, "response": response})
 
 
 if __name__ == '__main__':

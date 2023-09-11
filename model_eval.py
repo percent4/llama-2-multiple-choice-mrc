@@ -8,7 +8,7 @@ from sklearn.metrics import accuracy_score, classification_report
 
 
 def get_response(inputs):
-    url = "http://127.0.0.1:8877/firefly"
+    url = "http://10.241.132.208:8877/firefly"
 
     payload = json.dumps({
         "inputs": inputs
@@ -22,7 +22,7 @@ def get_response(inputs):
 
 
 if __name__ == '__main__':
-    with open("race_test.jsonl", 'r') as f:
+    with open("./data/race_test.jsonl", 'r') as f:
         samples = f.readlines()
 
     true_labels, pred_labels = [], []
