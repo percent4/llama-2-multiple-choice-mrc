@@ -44,7 +44,7 @@ def ds_llm():
 
 if __name__ == '__main__':
     # 使用合并后的模型进行推理
-    model_name_or_path = '/home/mingjie/experiment/Firefly/script/checkpoint/firefly-llama2-7b-qlora-sft-race-merge'
+    model_name_or_path = '/home/jclian91/experiment/Firefly/script/checkpoint/firefly-llama2-7b-qlora-sft-race-merge'
     adapter_name_or_path = None
 
     # 使用base model和adapter进行推理，无需手动合并权重
