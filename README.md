@@ -8,7 +8,7 @@
 
 Multiply Choice MRC，属于MRC。常见的形式为阅读文章，针对问题和给出的多个选项（一般4个），确定答案是其中的一个选项，即我们在英语考试时的阅读理解。
 
-本项目使用的数据集为[RACE](https://huggingface.co/datasets/race)，是Multiply Choice MRC中的经典数据集。
+本项目使用的数据集为[RACE](https://huggingface.co/datasets/race)，是Multiply Choice MRC中的经典数据集。数据集加载参考`data/data_transfer.ipynb` .
 
 该数据集的Leaderboard网址为：[https://paperswithcode.com/dataset/race](https://paperswithcode.com/dataset/race) .
 
@@ -33,17 +33,28 @@ weighted avg     0.8724    0.8691    0.8690      1436
 
 调参，结果如下：
 
-| model             | lr   | num_train_epochs | max_seq_length | accuracy |
-|-------------------|------|------------------|----------------|--|
-| llama-2-7b        | 1e-4 | 3                | 384            | 0.8691 |
-| llama-2-7b        | 1e-4 | 3                | 320            | 0.8593 |
-| llama-2-7b        | 1e-4 | 5                | 384            | 0.8545 |
-| llama-2-7b        | 1e-4 | 5                | 320            | 0.8538 |
-| llama-2-13b       | 1e-4 | 3                | 384            | 0.8851 |
-| Baichuan-7b       | 2e-4 | 3                | 384            | 0.8357 |
-| Baichuan-13b-chat | 1e-4 | 3                | 384            | 0.8726 |
+| model                                                    | lr   | num_train_epochs | max_seq_length | accuracy |
+|----------------------------------------------------------|------|------------------|----------------|----------|
+| llama-2-7b                                               | 1e-4 | 3                | 384            | 0.8691   |
+| llama-2-7b                                               | 1e-4 | 3                | 320            | 0.8593   |
+| llama-2-7b                                               | 1e-4 | 5                | 384            | 0.8545   |
+| llama-2-7b                                               | 1e-4 | 5                | 320            | 0.8538   |
+| llama-2-13b                                              | 1e-4 | 3                | 384            | 0.8844   |
+| Baichuan-7b                                              | 2e-4 | 3                | 384            | 0.8357   |
+| Baichuan-13b-chat                                        | 1e-4 | 3                | 384            | 0.8726   |
+| Baichuan2-13b-base                                       | 2e-4 | 3                | 384            | 0.8948   |
+| XVERSE-13B                                               | 1e-4 | 3                | 384            | 0.8718   |
+| llama-2-13b + Baichuan2-13b-base + XVERSE-13B (ensemble) | /    | /                | /              | 0.9025   |
 
+使用全量训练数据进行训练：
 
+参数：llama-2-13b，1e-4，3，384
+
+准确率：
+
+middle test: 0.9283
+high test: 0.8413
+all test: 0.8666
 
 ### 测试
 

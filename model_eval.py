@@ -22,7 +22,8 @@ def get_response(inputs):
 
 
 if __name__ == '__main__':
-    with open("./data/race_test.jsonl", 'r') as f:
+    model = "LLAMA2-13B-all-eval-middle.json"
+    with open("./data/race_high_test.jsonl", 'r') as f:
         samples = f.readlines()
 
     true_labels, pred_labels = [], []
@@ -38,4 +39,7 @@ if __name__ == '__main__':
     print(true_labels)
     print(pred_labels)
     print(classification_report(true_labels, pred_labels, digits=4))
+
+    with open(f"{model}_eval.json", "w", encoding="utf-8") as f:
+        f.write(json.dumps({"true_labels": true_labels, "pred_labels": pred_labels}, ensure_ascii=False, indent=4))
 
